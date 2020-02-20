@@ -109,11 +109,10 @@ p
 }
 .contentBox h1
 {
-	font-weight: 800;
+	font-weight: 900;
 	color: #fff;
 	text-transform: uppercase;
 	font-size: 5rem;
-	font-family: cursive;
 }
 .contentBox p
 {
@@ -198,6 +197,7 @@ p
 	color: #fff;
 	text-transform: uppercase;
 	font-size: 4.5rem;
+	font-family: cursive;
 }
 .btnD1
 {
@@ -206,7 +206,7 @@ p
 	background: #fff;
 	border-radius: 50px;
 	padding: 15px 50px;
-	font-size: 1.15rem;
+	font-size: 0.7rem;
 	outline: none;
 	font-weight: 500;
 	margin-top:20px;
