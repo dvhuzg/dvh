@@ -202,11 +202,11 @@ p
 .btnD1
 {
 	border: 2px solid #fff;
-	color: #000;
+	color: red;
 	background: #fff;
 	border-radius: 50px;
 	padding: 15px 50px;
-	font-size: 0.7rem;
+	font-size: 1.1rem;
 	outline: none;
 	font-weight: 500;
 	margin-top:20px;
