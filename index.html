@@ -338,9 +338,12 @@ var config = {
         }
 
         //push itself
-        var mailsRef = firebase.database().ref('email').push().set(
+        var mailsRef = firebase.database().ref('Notifications').push().set(
             {
-                Content: input.value
+                Name: inputName.value,
+                Email: inputEmail.value,
+                Phone: inputPhone.value,
+                Message: inputMessage.value
             }
         );
 
@@ -351,9 +354,6 @@ var config = {
         form.addEventListener('submit', function (evt) {
             evt.preventDefault();
             firebasePush(inputName);
-            firebasePush(inputEmail);
-            firebasePush(inputPhone);
-            firebasePush(inputMessage);
 console.log(evt)
             //shows alert if everything went well.
             return alert('Lời nhắn của bạn đã được ghi lại ! Cảm ơn vì đã đến <3');
