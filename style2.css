@@ -31,11 +31,11 @@ a:focus {
 	padding: 0 0 1em;
 }
 
-.content:not(:first-child) {
+.sec1:not(:first-child) {
 	padding: 4em 0;
 }
 
-.content.content--padded {
+.sec1.sec1--padded {
 	padding: 4em 0 8em;
 }
 
