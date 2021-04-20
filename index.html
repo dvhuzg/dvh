@@ -25,6 +25,8 @@
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="msapplication-TileImage" content="ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
+	<link rel="stylesheet" href="style2.css">
+	<link rel="stylesheet" href="style3.css">
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 	<header>
@@ -69,7 +71,7 @@
     </div>
   </div>
 </div>
-<section class="sec1", id="3MI">
+<section class="sec1" id="3MI">
 	<div class="container">
 		<div class="row">
 			<div class="offset-sm-2 col-sm-8">
@@ -79,42 +81,81 @@
 				</div>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-sm-4">
-				<div class="placeBox" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
-					<div class="imgBx">
-						<img src="fml.JPG" class="img-fluid">
-					</div>
-					<div class="content">
-						<h3>My Love<br><span>My Family ♥</span></h3>
-					</div>
+				<div class="grid grid--effect-rigel">
+					<a href="#" class="grid__item grid__item--c1">
+						<div class="stack" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__figure">
+								<img class="stack__img" src="fml.JPG" alt="Image"/>
+							</div>
+						</div>
+						<div class="grid__item-caption">
+							<h3 class="grid__item-title">My Family ♥</h3>
+							<div class="column column--left">
+								<span class="column__text">Member</span>
+								<span class="column__text">Biggest love</span>
+								
+							</div>
+							<div class="column column--right">
+								<span class="column__text">4</span>
+								<span class="column__text">♥</span>
+								
+							</div>
+						</div>
+					</a>
+					<a href="#" class="grid__item grid__item--c2">
+						<div class="stack" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__figure">
+								<img class="stack__img" src="fr.jpg" alt="Image"/>
+							</div>
+						</div>
+						<div class="grid__item-caption">
+							<h3 class="grid__item-title">F*cking Close Friend</h3>
+							<div class="column column--left">
+								<span class="column__text">Member</span>
+								<span class="column__text">Founded year</span>
+								
+							</div>
+							<div class="column column--right">
+								<span class="column__text">5</span>
+								<span class="column__text">Kindergarten</span>
+								
+							</div>
+						</div>
+					</a>
+					<a href="#" class="grid__item grid__item--c3">
+						<div class="stack" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__figure">
+								<img class="stack__img" src="pkl1.1.jpg" alt="Image"/>
+							</div>
+						</div>
+						<div class="grid__item-caption">
+							<h3 class="grid__item-title">Passion</h3>
+							<div class="column column--left">
+								<span class="column__text">First</span>
+								<span class="column__text">Second</span>
+								
+							</div>
+							<div class="column column--right">
+								<span class="column__text">Bae</span>
+								<span class="column__text">Motor</span>
+								
+							</div>
+						</div>
+					</a>
 				</div>
-			</div>
-
-			<div class="col-sm-4">
-				<div class="placeBox" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
-					<div class="imgBx">
-						<img src="fr.jpg" class="img-fluid">
-					</div>
-					<div class="content">
-						<h3>AE Cây Khế<br><span>Bọn bạn lol</span></h3>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-sm-4">
-				<div class="placeBox" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
-					<div class="imgBx">
-						<img src="pkl1.1.jpg" class="img-fluid">
-					</div>
-					<div class="content">
-						<h3>Xe + Người Yêu ♥<br><span>2 Tình Yêu to bự</span></h3>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
+			</section>
 <section class="sec2" id="MakeColor">
 	<div class="container h100">
 		<div class="contentBox h100">
@@ -361,7 +402,17 @@ console.log(evt)
     }
 
 </script>
-
+<script src="anime.min.js"></script>
+<script src="main.js"></script>
+		<script>
+			(function() {
+				
+				[].slice.call(document.querySelectorAll('.grid--effect-rigel > .grid__item')).forEach(function(stackEl) {
+					new RigelFx(stackEl);
+				});
+				
+			})();
+			</script>
 
 <audio src="chi muon ben em luc nay (mp3cut.net).mp3" autoplay loop></audio>
 </body>
