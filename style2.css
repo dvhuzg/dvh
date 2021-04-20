@@ -57,7 +57,7 @@ a:focus {
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	padding: 70px 7em;
+	padding: 70px 0px;
 	perspective: 800px;
 	perspective-origin: 50% 100%;
 }
