@@ -53,7 +53,7 @@ a:focus {
 .grid {
 	position: relative;
 	display: flex;
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
 	width: 100%;
