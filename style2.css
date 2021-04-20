@@ -31,11 +31,11 @@ a:focus {
 	padding: 0 0 1em;
 }
 
-.sec1:not(:first-child) {
+.content:not(:first-child) {
 	padding: 4em 0;
 }
 
-.sec1.sec1--padded {
+.content.content--padded {
 	padding: 4em 0 8em;
 }
 
@@ -57,7 +57,7 @@ a:focus {
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	padding: 70px 0px;
+	padding: 70px 7em;
 	perspective: 800px;
 	perspective-origin: 50% 100%;
 }
@@ -70,7 +70,7 @@ a:focus {
 	margin: 1.5em 2vm;
 	cursor: default;
 	transform-style: preserve-3d;
-	left:40px;
+	
 }
 
 .grid__item:hover,
@@ -101,6 +101,8 @@ a:focus {
 	width: 300px;
 	height: 400px;
 	transform-style: preserve-3d;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .stack__deco {
