@@ -428,3 +428,9 @@ button.btn.btnD2
 	float: right;
 	font-size: 16px;
 }
+@media(max-width: 415px){
+	.blogpost .imgBx img:hover
+	{
+		transform: scale(1.08);
+	}
+}
