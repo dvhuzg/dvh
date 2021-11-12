@@ -349,6 +349,8 @@ const inputEmail = form.querySelector('#email');
 const inputName = form.querySelector('#name');
 const inputPhone = form.querySelector('#phone');
 const inputMessage = form.querySelector('#message');
+const d = new Date();
+const time = d.getHours()+"h"+d.getMinutes()+" "+d.getDate()+"/"+d.getMonth()+"/"+d.getFullYear();
 
 
 
@@ -381,7 +383,8 @@ var config = {
         //push itself
         var mailsRef = firebase.database().ref('Notifications').push().set(
             {
-                Name: inputName.value,
+                Time: time,
+		Name: inputName.value,
                 Email: inputEmail.value,
                 Phone: inputPhone.value,
                 Message: inputMessage.value
